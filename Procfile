@@ -1,0 +1,1 @@
+web: ts-node portfolio-blog-backend/app.ts

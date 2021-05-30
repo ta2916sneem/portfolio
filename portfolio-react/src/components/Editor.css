@@ -1,0 +1,117 @@
+.ql-container{
+    height: 30rem;
+}
+
+.ql-align-center{
+    display: flex;
+    justify-content: center;
+}
+
+
+.ql-editor img{
+    object-fit: contain;
+    max-height: 30rem;
+}
+
+iframe {
+    width: 100%;
+    height: 56.25vw;
+    max-height: calc(800px / 16 * 9);
+}
+
+/* Set dropdown font-families */
+
+.ql-syntax {
+    background-color: #212121 !important;
+    border-radius: 4px !important;
+    padding-left: 2em !important;
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+}
+
+.ql-picker.ql-font .ql-picker-item {
+    font-size: 0;
+}
+.ql-picker.ql-font .ql-picker-item:before {
+    content: attr(data-value) !important;
+    font-size: 14px;
+}
+
+.ql-picker.ql-font .ql-active:before {
+    content: attr(data-value) !important;
+    font-size: 14px;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Roboto"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Roboto"]::before
+{
+    font-family: "Roboto", sans-serif;
+    content: "Roboto" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Raleway"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Raleway"]::before
+{
+    font-family: "Raleway", sans-serif;
+    content: "Raleway" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Montserrat"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Montserrat"]::before
+{
+    font-family: "Montserrat", sans-serif;
+    content: "Montserrat" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Lato"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Lato"]::before
+{
+    font-family: "Lato", sans-serif;
+    content: "Lato" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Rubik"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Rubik"]::before
+{
+    font-family: "Rubik", sans-serif;
+    content: "Rubik" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Quicksand"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Quicksand"]::before
+{
+    font-family: 'Quicksand', sans-serif;
+    content: "Quicksand" !important;
+}
+
+/* Set content font-families */
+.ql-font-Roboto {
+    font-family: "Roboto", sans-serif;
+}
+.ql-font-Raleway {
+    font-family: "Raleway", sans-serif;
+}
+.ql-font-Montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+.ql-font-Lato {
+    font-family: "Lato", sans-serif;
+}
+.ql-font-Rubik {
+    font-family: "Rubik", sans-serif;
+}
+.ql-font-Quicksand {
+    font-family: "Quicksand", sans-serif;
+}
+
+blockquote::before{
+    content: " ";
+    background-color: dimgray !important;
+    margin-right: 1em !important;
+}
+
+blockquote{
+    color: dimgray !important;
+}

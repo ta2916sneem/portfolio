@@ -1,0 +1,9 @@
+FROM node:alpine
+WORKDIR "/app"
+COPY ./portfolio-blog-backend/package.json ./portfolio-server
+RUN npm config set registry http://registry.npmjs.org/
+RUN npm install
+RUN npm install -g ts-node
+COPY . .
+WORKDIR "/app/portfolio-server"
+CMD ["npm", "run", "start"]
